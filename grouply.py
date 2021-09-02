@@ -67,7 +67,7 @@ def start(index):
 	print("[*] Initializing...")
 	if index >= len(availabledom):
 		return
-	query = "intext:chat.whatsapp.com inurl:" + availabledom[index]
+	query = "janda" "intext:chat.whatsapp.com inurl:" + availabledom[index]
 	print("[*] Finding Results from Google ...")
 	for url in search(query, tld="com", num=10, stop=None, pause=2):
 		txt = urllib.request.urlopen(url).read().decode("utf8")
